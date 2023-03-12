@@ -1,0 +1,37 @@
+body {
+    background-color: #f5f5eb;
+}
+.accordeon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.accordeon hr {
+    border: 0.1px solid #e9ebe8;
+}
+.accordeon .content {
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+}
+.accordeon label {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: 18px;
+}
+.accordeon input{
+    display: none;
+}
+.accordeon label:before {
+    content: '+';
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+}
+.accordeon input:checked + label:before {
+    transition: transform 0.50s;
+    transform: rotate(45deg);
+}
+.accordeon input:checked + label + .content {
+    height: auto;
+}
