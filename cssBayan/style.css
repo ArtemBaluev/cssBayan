@@ -6,23 +6,34 @@ body {
     margin-right: auto;
     width: 70%;
 }
+.accordeon h1 {
+    padding-bottom: 0px;
+}
 .accordeon hr {
     border: 0.1px solid #e9ebe8;
 }
 .accordeon .content {
     height: 0;
     overflow: hidden;
-    align-items: center;
+    text-align: center;
+}
+.content img {
+    padding: 20px;
+    width: 50%;
 }
 .accordeon label {
+    padding: 10px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;   
     font-size: 18px;
 }
-.accordeon input{
+.accordeon input {
     display: none;
 }
-.accordeon label:before {
+.accordeon :hover {
+    cursor: pointer;
+}
+.accordeon:hover label:before {
     content: '+';
     font-size: 24px;
     font-weight: bold;
